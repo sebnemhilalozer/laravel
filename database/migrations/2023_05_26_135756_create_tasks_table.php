@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateTasksTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. 
      *
      * @return void
      */
@@ -21,13 +21,5 @@ class CreateTasksTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('tasks');
-    }
+
 }

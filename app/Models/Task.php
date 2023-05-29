@@ -15,4 +15,7 @@ class Task extends Model
         'name',
         'is_completed',
     ];
+    protected $fillable = [
+        'name',
+    ];
 }
