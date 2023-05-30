@@ -34,4 +34,11 @@ class TasksController extends Controller
 
         return TaskResource::make($task);
     }
+
+    public function destroy(Task $task)
+    {
+        $task->delete();
+
+        return response()->noContent();
+    }
 }
